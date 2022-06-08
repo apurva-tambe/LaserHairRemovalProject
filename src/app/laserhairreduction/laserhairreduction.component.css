@@ -1,8 +1,8 @@
 h1,h2{
     color: #e03c31;
-    font: bold;
-    
-  }
+    font-size: 3pc;
+    }
+   
   .main{
     background-color: #ace0f0;
 }
@@ -45,4 +45,6 @@ h1,h2{
         overflow: visible;
         height: auto;
       }
+      
+     
       

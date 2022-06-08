@@ -9,13 +9,19 @@ import { DemohairComponent } from './demohair/demohair.component';
 import { LaserhairreductionComponent } from './laserhairreduction/laserhairreduction.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { SkintreatmentsComponent } from './skintreatments/skintreatments.component';
+import { DermafacialComponent } from './dermafacial/dermafacial.component';
+
 @NgModule({
   declarations: [
     AppComponent,
   
     HomepageComponent,
        DemohairComponent,
-       LaserhairreductionComponent
+       LaserhairreductionComponent,
+     
+       SkintreatmentsComponent,
+             DermafacialComponent
   ],
   imports: [
     BrowserModule,

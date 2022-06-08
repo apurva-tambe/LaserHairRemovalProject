@@ -1,0 +1,25 @@
+*body{
+    text-emphasis-color: red;
+  } 
+  .navbar-dark .navbar-nav .nav-link {
+      color: rgb(241 4 50 / 93%);
+      background-color: white;
+  }
+  .main{
+      background-color: #ace0f0;
+  }
+  h1,h2,h3{
+    color: #e03c31;
+    font-size: 4pc;
+}
+p{
+    font-size: 1.375rem;
+}
+.card{
+    border-radius:16px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
+}
+.abc1{
+    background-color:#ddf2f9;
+    height: 375px;
+  }

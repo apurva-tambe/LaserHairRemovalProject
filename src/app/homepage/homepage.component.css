@@ -25,9 +25,9 @@
 }
 h1,h2{
   color: #e03c31;
-  font: bold;
-  
-}
+  font-size: 4pc;
+  }
+ 
 .card_info{
 text-align: center;
 }
