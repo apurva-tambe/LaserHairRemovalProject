@@ -6,6 +6,10 @@ h1,h2{
   .main{
     background-color: #ace0f0;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(241 4 50 / 93%);
+  background-color: white;
+}
 
 .card{
     border-radius: 2pc;

@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SkintreatmentsComponent } from './skintreatments/skintreatments.component';
 import { DermafacialComponent } from './dermafacial/dermafacial.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { DermafacialComponent } from './dermafacial/dermafacial.component';
        LaserhairreductionComponent,
      
        SkintreatmentsComponent,
-             DermafacialComponent
+             DermafacialComponent,
+            
   ],
   imports: [
     BrowserModule,

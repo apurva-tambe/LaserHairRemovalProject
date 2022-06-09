@@ -1,25 +1,56 @@
 *body{
     text-emphasis-color: red;
   } 
-  .navbar-dark .navbar-nav .nav-link {
-      color: rgb(241 4 50 / 93%);
-      background-color: white;
+  .navbar-light .navbar-nav .nav-link {
+    color: rgb(241 4 50 / 93%);
   }
+  
   .main{
       background-color: #ace0f0;
   }
   h1,h2,h3{
     color: #e03c31;
-    font-size: 4pc;
+    font-size: 3pc;
+    letter-spacing:1px;
 }
-p{
-    font-size: 1.375rem;
-}
+
 .card{
     border-radius:16px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 25%);
-}
-.abc1{
-    background-color:#ddf2f9;
-    height: 375px;
+}  
+.card_info{
+    text-align: center;
+    }
+.booking{
+      background-color: #ddf2f9;
+      height: 315px;
+  }
+  .loveletters{
+    background-color: #f5f9fa;
+    margin-top: 7pc;
+  }
+  .rating-list {
+    display: inline-block;
+    list-style: none;
+  }
+  .rating-list li {
+    font-size: 20px;
+    float: right;
+    color: #ddd;
+    padding: 10px 5px;
+  }
+  .rating-list li:hover {
+    color: #ffd700;
+  }
+  .rating-list li:hover ~ li {
+    color: #ffd700;
+  }
+  .rating-list li.selected {
+    color: #ffd700;
+  }
+  .skinnsi_footer{
+    background-color: #CBECF6;
+  }
+  .lhr{
+    background-color: #eafaff;
   }
