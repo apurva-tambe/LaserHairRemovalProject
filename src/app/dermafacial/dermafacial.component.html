@@ -31,7 +31,8 @@
   
         <span class="navbar-toggler-icon"></span>
       </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link"  routerLink="/Laser" href="#treatments">laser hair reduction <span class="sr-only">(current)</span></a>
@@ -42,9 +43,23 @@
           <li class="nav-item">
             <a class="nav-link"routerLink="/skintreatments" href="#skintreatments">skin treatments</a>
           </li>
-          <form class="form-inline my-2 my-lg-0" style="margin-left: 537px;">
-            <button type="button" class="btn btn-outline-danger">Login</button>
-          </form>
+          <li>
+            <div class="dropdown" style="position: absolute;margin-left: 490px;">
+              <i class="fa fa-headphones mt-3"  aria-hidden="true"></i>
+              <div class="dropdown-content mt-3">
+                <div class="support mt-3 ml-5">
+                <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> +91-7845127845</a>
+                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@skinnsi.com</a>
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +91-7845127845</a>
+              </div>
+            </div>
+          </div>
+          </li>
+          <li>
+            <form class="form-inline my-2 my-lg-0" style="margin-left: 537px;">
+              <button type="button" class="btn btn-outline-danger">Login</button>
+            </form>
+          </li>
         </ul>
       </div>
     </nav>
@@ -144,7 +159,7 @@
       </div>
     </div>
   </div>
-  <div class="abc1">
+  <div class="lhr">
     <div class="container">
       <div class="row my-5">
         <div class="col mb-3 my-5">
@@ -354,11 +369,11 @@
     </div>
   </div>
   <div class="container">
-    <div class="message my-5 mx-5">
+    <div class="message text-center my-5 mx-5">
       <h2>FAQ</h2>
     </div>
     <b> 01. Is an at-home laser hair reduction treatment safe? </b><span><i class="fa fa-angle-down"
-        style="margin-left: 60%;" (click)="collapse.toggle()" [attr.aria-expanded]="!laser"
+        style="margin-left: 60%;" (onclick)="collapse.toggle()" [attr.aria-expanded]="!laser"
         aria-hidden="true"></i></span>
     <div #collapse="ngbCollapse" [(ngbCollapse)]="laser">
       <br>
@@ -367,7 +382,7 @@
     </div>
     <hr>
     <b>02. What are the safety precautions taken by the therapist during the session?</b><span><i
-        class="fa fa-angle-down" style="margin-left: 46%;" (click)="collapse.toggle()" [attr.aria-expanded]="!laser"
+        class="fa fa-angle-down" style="margin-left: 46%;" (onclick)="collapse.toggle()" [attr.aria-expanded]="!laser"
         aria-hidden="true"></i></span>
     <div #collapse="ngbCollapse" [(ngbCollapse)]="laser">
       <br>
