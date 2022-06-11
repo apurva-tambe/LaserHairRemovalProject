@@ -65,8 +65,25 @@ text-align: center;
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.fa{
-  color: red;
+
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+.rating-list li {
+  font-size: 20px;
+  float: right;
+  color: #ddd;
+  padding: 10px 5px;
+}
+.rating-list li:hover {
+  color: #ffd700;
+}
+.rating-list li:hover ~ li {
+  color: #ffd700;
+}
+.rating-list li.selected {
+  color: #ffd700;
 }
 
 @media only screen and (min-width: 768px) {

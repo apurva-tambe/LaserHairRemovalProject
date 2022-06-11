@@ -317,6 +317,40 @@
         <div class="col-md-2"></div>
       </div>
     </div>
+    <div class="container">
+      <div class="message text-center my-5 ">
+        <h1>#skinnsitribe</h1>
+        <p> <b>See what our skinnsi tribe has to say</b>.</p>
+      </div>
+      <div class="row">
+      <div class="col-md-4">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-body">
+        <h5 class="card-title text-center">Alina Gala</h5>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-body">
+        <h5 class="card-title text-center">Isha Jhaveri</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-body">
+        <h5 class="card-title text-center">Rabiya</h5>
+       </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  
     <div class="loveletters my-5">
       <div class="container">
         <div class="message  text-center my-5">
@@ -331,11 +365,13 @@
                   <h5>Aparajita singh</h5>
                   <p>mumbai</p>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.My therapist Jyoti Vishwakarma, was very helpful and informative during the whole session,
-                    before coming in my house she always wears a pp kit, and makes sure to clean and sanitise the
-                    machine
-                    and tools before and after the session.</p>
+                    card</p>
+                    <ul class="list-inline rating-list" style="margin-top:78px;" *ngFor="let star of stars; let i= index">
+                      <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}"
+                        (mouseover)="addClass(star)" (mouseout)="removeClass()"> <span class="material-icons"><i
+                            class="fa fa-star" aria-hidden="true"></i></span>
+                      </li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -347,8 +383,13 @@
                   <h5>Nehaeats</h5>
                   <p>mumbai</p>
                   <p class="card-text">I totally loved the service. It was my first session with Skinnsi and I loved how
-                    professional they are. Leela, made sure I was comfortable at all times and answered all my questions
-                    so well.</p>
+                    professional they are.</p>
+                    <ul class="list-inline rating-list" style="margin-top:78px;" *ngFor="let star of stars; let i= index">
+                      <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}"
+                        (mouseover)="addClass(star)" (mouseout)="removeClass()"> <span class="material-icons"><i
+                            class="fa fa-star" aria-hidden="true"></i></span>
+                      </li>
+                    </ul>
                 </div>
               </div>
 
@@ -361,8 +402,13 @@
                   <h5>Khushi Rawal</h5>
                   <p>new Delhi</p>
                   <p class="card-text">Absolutely love the treatment! amazing results, super hygienic and very kind
-                    counselors and therapists! My therapist Bhavna Tyagi was very professional and explained the whole
-                    process and made me feel very comfortable.</p>
+                    counselors and therapists!.</p>
+                    <ul class="list-inline rating-list" style="margin-top:78px;" *ngFor="let star of stars; let i= index">
+                      <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}"
+                        (mouseover)="addClass(star)" (mouseout)="removeClass()"> <span class="material-icons"><i
+                            class="fa fa-star" aria-hidden="true"></i></span>
+                      </li>
+                    </ul>
                 </div>
               </div>
             </div>
@@ -476,11 +522,7 @@
         {{showMore1 ?'less':'more' }}</button>
     </div>
   </div>
-
-
-
-
-  <!-- footer started -->
+ <!-- footer started -->
   <footer class="skinnsi_footer">
     <div class="container">
       <div class="row"></div>

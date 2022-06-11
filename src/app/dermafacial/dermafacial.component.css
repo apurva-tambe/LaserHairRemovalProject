@@ -82,4 +82,12 @@
   .fa{
     color: red;
   }
+  @media only screen and (min-width: 768px) {
+    iframe{
+      height: 13em;
+    }
+    .card_video{
+      width: 50%;
+    }
+  }
   

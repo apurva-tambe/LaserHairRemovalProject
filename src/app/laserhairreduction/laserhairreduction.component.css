@@ -32,7 +32,25 @@ h2 {
 .loveletters {
   background-color: #f5f9fa;
 }
-
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+.rating-list li {
+  font-size: 20px;
+  float: right;
+  color: #ddd;
+  padding: 10px 5px;
+}
+.rating-list li:hover {
+  color: #ffd700;
+}
+.rating-list li:hover ~ li {
+  color: #ffd700;
+}
+.rating-list li.selected {
+  color: #ffd700;
+}
 .card_info {
   text-align: center;
 }
@@ -91,4 +109,12 @@ h2 {
 
 .fa {
   color: red;
+}
+@media only screen and (min-width: 768px) {
+  iframe{
+    height: 13em;
+  }
+  .card_video{
+    width: 50%;
+  }
 }
